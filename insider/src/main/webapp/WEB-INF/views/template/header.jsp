@@ -859,7 +859,7 @@
 			
 			//북마크
 			async bookmarkInsert(boardNo) {
-			  const resp = await axios.post("/rest/bookmark/" + boardNo);
+			  const resp = await axios.post(contextPath+"/rest/bookmark/" + boardNo);
 			
 			  if (resp.data === true) {
 			    this.bookmarkCheck.push({ boardNo });
@@ -877,7 +877,7 @@
 				},
 			
 			async bookmarkList(){
-				const resp = await axios.get("/rest/bookmark/selectOne");
+				const resp = await axios.get(contextPath+"/rest/bookmark/selectOne");
 				this.bookmarkCheck.push(...resp.data);
 			},
 	      
@@ -1066,13 +1066,13 @@
 				}
 			},
 			async getGpsFromMember(){
-				const resp = await axios.get("/rest/member/");
+				const resp = await axios.get(contextPath+"/rest/member/");
 				memberGpsLat = resp.data.memberLat;
 				memberGpsLon = resp.data.memberLon;
 			},
 			async setGpsToMember(){
 				const data = {memberLon : memberGpsLon, memberLat:memberGpsLat}
-				const resp = await axios.put("/rest/member/", data);
+				const resp = await axios.put(contextPath+"/rest/member/", data);
 			},
 			/* GPS 끝 */
 	    },
