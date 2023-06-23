@@ -1,6 +1,5 @@
-# finalProject
+# FinalProject
 
-# Insider
 ![insider_logo](https://github.com/Moon-Tree/final_Insider/assets/115346851/bc50fb1f-453c-49bd-bcf5-8bf71bc5f7fb)
 * 개발 기간 : 2023-05-10 ~ 2023-06-13
 * 개발 목표 : GPS와 사진 및 동영상을 중심으로 한 SNS 플랫폼으로 사용자들은 포스팅, DM, 팔로우, 댓글 및 좋아요 기능을 통해 서로의 정보와 의견을 공유하는 커뮤니티입니다.
